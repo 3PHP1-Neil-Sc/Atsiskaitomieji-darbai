@@ -1,0 +1,13 @@
+
+CREATE DATABASE IF NOT EXISTS darbu_sarasas
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE darbu_sarasas;
+
+CREATE TABLE IF NOT EXISTS darbai (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    darbas VARCHAR(255) NOT NULL,
+    laikas DATETIME NULL DEFAULT NULL,
+    atliktas BOOLEAN NOT NULL DEFAULT 0
+);
